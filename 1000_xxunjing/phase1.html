@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-size:cover;
+            background-image:url('bgp1.png')
+        }
+        .phase {
+            position: relative;
+        }
+
+        .backToMainPage {
+            display: flex;
+            flex-wrap: wrap;
+        }   
+
+        .backToMainPage a {
+            flex: 0 0 40%; /* 調整每張圖片佔據的寬度 */
+            margin-top:1%;
+            margin-left:1%;
+        }
+
+        .backToMainPage img {
+            width: 40%; /* 使用百分比調整寬度 */
+            height: auto;
+        }
+
+        /* 在小螢幕上進行調整 */
+        @media screen and (max-width: 600px) {
+            .backToMainPage {
+                top: 5%;
+                left: 5%;
+            }
+
+            .backToMainPage a img {
+                width: 15%; /* 調整小螢幕上的寬度 */
+            }
+        }
+
+        .phase video {
+            width: 80%;
+            height: auto;
+            object-fit: cover;
+            top:3%; /* 設定影片離頂端的高度為畫面的一半 */
+            transform: translateY(3%);
+        }
+
+        @media screen and (max-width: 600px) {
+            .phaseI video {
+                height: 100%;
+            }
+        }
+
+        .picture {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* 將內容水平置中 */
+            align-items: center;
+        }
+
+        .picture p {
+            flex: 0 0 70%; /* 調整每張圖片佔據的寬度 */
+            margin-top:10%;
+        }
+
+        .picture a {
+            flex: 0 0 23%; /* 調整每張圖片佔據的寬度 */
+            margin-top:1%;
+            margin-bottom:4%;
+        }
+
+        .picture img {
+            width: 100%; /* 讓圖片寬度佔據其父元素的100% */
+            height: auto; /* 讓高度根據寬度自動調整，保持圖片比例 */
+        }
+
+        @media screen and (max-width: 600px) {
+            .picture a {
+                flex: 0 0 100%; /* 在小螢幕上，讓每張圖片佔據整行 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="backToMainPage">
+        <a href="index.html"><img src="btmp.png" alt="tv"></a>
+    </div>
+        
+    <div class="phase">
+        <center><video src="IMG_7331.mov" autoplay muted loop></video></center>
+    </div>
+
+    <div class="picture">
+        <center><p><img src="p1word.png" alt="no"></p></center>
+    </div>
+
+    <div class="picture">
+        <a href="pic-01.html"><img src="pic-01.png" alt="tv"></a>
+        <a href="pic-02.html"><img src="pic-02.png" alt="tv"></a>
+        <a href="pic-03.html"><img src="pic-03.png" alt="tv"></a>
+        <a href="pic-04.html"><img src="pic-04.png" alt="tv"></a>
+    </div>
+        <div class="picture">
+        <a href="pic-05.html"><img src="pic-05.png" alt="tv"></a>
+        <a href="pic-06.html"><img src="pic-06.png" alt="tv"></a>
+        <a href="pic-07.html"><img src="pic-07.png" alt="tv"></a>
+        <a href="pic-08.html"><img src="pic-08.png" alt="tv"></a>
+    </div>
+        <div class="picture">
+        <a href="pic-09.html"><img src="pic-09.png" alt="tv"></a>
+        <a href="pic-10.html"><img src="pic-10.png" alt="tv"></a>
+        <a href="pic-11.html"><img src="pic-11.png" alt="tv"></a>
+        <a href="pic-12.html"><img src="pic-12.png" alt="tv"></a>
+    </div>
+        <div class="picture">
+        <a href="pic-13.html"><img src="pic-13.png" alt="tv"></a>
+        <a href="pic-14.html"><img src="pic-14.png" alt="tv"></a>
+        <a href="pic-15.html"><img src="pic-15.png" alt="tv"></a>
+        <a href="pic-16.html"><img src="pic-16.png" alt="tv"></a>
+    </div>
+
+</body>
+
+</html>
