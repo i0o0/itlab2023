@@ -8,9 +8,6 @@
             background-size:cover;
             background-image:url('bgp1.png')
         }
-        .phase {
-            position: relative;
-        }
 
         .backToMainPage {
             display: flex;
@@ -35,23 +32,29 @@
                 left: 5%;
             }
 
-            .backToMainPage a img {
+        .backToMainPage a img {
                 width: 15%; /* 調整小螢幕上的寬度 */
             }
         }
 
-        .phase video {
-            width: 80%;
-            height: auto;
-            object-fit: cover;
-            top:3%; /* 設定影片離頂端的高度為畫面的一半 */
-            transform: translateY(3%);
+        .phase {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        @media screen and (max-width: 600px) {
-            .phaseI video {
-                height: 100%;
-            }
+        .phase img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .picture p {
+            flex: 0 0 70%; /* 調整每張圖片佔據的寬度 */
+            margin-top:10%;
         }
 
         .picture {
@@ -91,7 +94,7 @@
     </div>
         
     <div class="phase">
-        <center><video src="IMG_7331.mov" autoplay muted loop></video></center>
+        <img src="photo1.png" alt="tv">
     </div>
 
     <div class="picture">

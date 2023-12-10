@@ -40,12 +40,19 @@
             }
         }
 
-        .phase video {
-            width: 80%;
+        .phase {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .phase img {
+            max-width: 100%;
             height: auto;
-            object-fit: cover;
-            top:3%; /* 設定影片離頂端的高度為畫面的一半 */
-            transform: translateY(3%);
+            display: block;
+            margin: auto;
         }
 
         @media screen and (max-width: 600px) {
@@ -91,7 +98,7 @@
     </div>
         
     <div class="phase">
-        <center><video src="IMG_7331.mov" autoplay muted loop></video></center>
+        <img src="photo2.png" alt="tv">
     </div>
 
     <div class="picture">
